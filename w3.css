@@ -1,0 +1,202 @@
+html,body
+{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+#menu
+{
+  min-width:300px;
+  flex-direction: column;
+  position: fixed;
+  display: none;
+  top:0;
+  left:0;
+  z-index: 10;
+  background: grey;
+  height: 100%;
+}
+#menu a
+{
+  width: 100%;
+  padding: 50px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+.innernavbar
+{
+  width:100%;
+  height: 50px;
+  background-color: white;
+  position:fixed;
+  top: 0px
+
+}
+.navitem
+{
+  font-size: 24px;
+  padding-bottom:16px;
+  padding-top:16px;
+}
+.left
+{
+  float:left;
+}
+.center
+{
+  text-align: center;
+}
+.right
+{
+  float:right;
+}
+.icon
+{
+  width: 30%;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.container
+{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+.item
+{
+  width: 20%;
+  height:600px;
+  padding:5px ;
+  align-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+}
+img
+{
+  width: 100%;
+  height:350px;
+}
+p
+{
+  justify-content: center;
+  font-style: normal;
+  width: auto;
+}
+.pagination
+{
+  width: 100%;
+  text-align:center;
+}
+.pagination a
+{
+  width: 100%;
+  color: black;
+  padding:10px 16px;
+  transition: background-color .3s;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align:center;
+  text-decoration: none;
+}
+.pagination a.active
+{
+  background-color:black;
+  color: white;
+}
+.pagination a:hover:not(.active)
+{
+  background-color: black;
+  color:white;
+}
+.hr
+{
+  margin:50px;
+  border: 10px;
+  border-top: 1px solid #eee
+}
+#about
+{
+  display:flex;
+  flex-direction: row;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px
+}
+.am
+{
+  width:60%;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+  margin:auto;
+  text-align: center;
+}
+h3, h4,h6
+{
+  font-size: 24px;
+  font-style: normal;
+  align-content: center;
+  font-weight: 400;
+}
+.footer
+{
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.section
+{
+  width: 30%;
+  height: 50px;
+  padding:auto ;
+  justify-content:center;
+  text-align: left;
+}
+li
+{
+  list-style: none;
+}
+span
+{
+  font-size: 16px;
+  color: black;
+  display: inline-block;
+}
+span.tag
+{
+  background-color: #616161!important;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top:4px;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+@media only screen and (max-width:600px)
+{
+.item
+{
+  width:auto;
+}
+.section
+{
+  width:100%;
+  height: auto;
+}
+}
